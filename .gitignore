@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*venv
+.env
+.venv/
+env/
+venv/
+
+# C / C++
+*.o
+*.out
+*.obj
+*.exe
+*.gch
+*.log
+a.out
+
+# JavaScript (node.js)
+node_modules/
+npm-debug.log
+dist/
+build/
+
+# VsCode
+.vscode/
