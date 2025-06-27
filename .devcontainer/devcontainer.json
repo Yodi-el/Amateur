@@ -1,28 +1,17 @@
 {
-  "name": "Yodi-El",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {},
-    "ghcr.io/devcontainers/features/node:1": {},
-    "ghcr.io/devcontainers/features/cpp:1": {}
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-python.python",
-        "ms-vscode.cpptools",
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "ritwickdey.LiveServer"
-      ]
-    }
+  "name": "Multi-Language Workspace",
+  "build": {
+    "dockerfile": "Dockerfile"
   },
   "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "files.exclude": {
-      "**/__pycache__": true,
-      "**/*.pyc": true
-    }
+    "terminal.integrated.shell.linux": "/bin/bash"
   },
-  "postCreateCommand": "echo 'Devcontainer ready!'"
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-python.python",
+    "ms-vscode.js-debug"
+  ],
+  "forwardPorts": [],
+  "remoteUser": "vscode"
 }
+
