@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "🔧 Starting dotfiles install script..."
+echo "Starting dotfiles install script..."
 
 # Symlink or copy config files
 cp .bashrc ~/.bashrc
